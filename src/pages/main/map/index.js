@@ -1,12 +1,22 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 class Map extends Component {
    render(){
       return (
          <View style={styles.page}>
             <View style={styles.container}>
-               <Text>sadsadsa</Text>
+               <MapView
+                  provider={PROVIDER_GOOGLE} // remove if not using Google Maps
+                  style={styles.map}
+                  region={{
+                     latitude: 37.78825,
+                     longitude: -122.4324,
+                     latitudeDelta: 0.015,
+                     longitudeDelta: 0.0121,
+                  }}
+               >
+               </MapView>
             </View>
          </View>
       )
@@ -15,18 +25,14 @@ class Map extends Component {
 export default Map
 
 const styles = StyleSheet.create({
-   page: {
-     flex: 1,
-     justifyContent: "center",
-     alignItems: "center",
-     backgroundColor: "#F5FCFF"
-   },
    container: {
-     height: 300,
-     width: 300,
-     backgroundColor: "tomato"
+      ...StyleSheet.absoluteFillObject,
+      height: Dimensions.get("window").height,
+      width: Dimensions.get("window").width,
+      justifyContent: 'flex-end',
+      alignItems: 'center',
    },
    map: {
-     flex: 1
-   }
- });
+      ...StyleSheet.absoluteFillObject,
+   },
+});
