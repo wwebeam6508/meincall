@@ -6,8 +6,8 @@ import MainApp from './pages/main'
 const Routes = () => (
    <Router>
       <Scene key = "root">
-         <Scene key = "login" component = {Login} title = "Login" initial = {true} />
-         <Scene key = "main" component = {MainApp} title = "" />
+         <Scene key = "login" component = {Login} title = "Login" initial = {true} hideNavBar={true}/>
+         <Scene key = "main" component = {MainApp} title = "" hideNavBar={true}/>
       </Scene>
    </Router>
 )

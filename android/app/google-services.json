@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "460122067064",
+    "project_id": "callhelp-b382e",
+    "storage_bucket": "callhelp-b382e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460122067064:android:5de1f143e9135eee23dd8d",
+        "android_client_info": {
+          "package_name": "com.pbd.meincall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460122067064-pnugvlakn5kfmjfoh3uu6s2v2jl2ib8h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA46Lr0j6EaLg-E-w_kzEfS5SsPH3_fVRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460122067064-pnugvlakn5kfmjfoh3uu6s2v2jl2ib8h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
